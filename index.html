@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		;(function(){
+
+			var whoAreYou = prompt("Кто пришел?");
+
+
+			if (whoAreYou == "admin") {
+				var passWord = prompt("Пароль?");
+				if(passWord == "Черный Властелин"){
+					alert("Добро пожаловать!");
+				} else if (passWord == null) {
+					alert("Вход отменен");
+				} else {
+					alert("Пароль неверный");
+				}
+			} else if (whoAreYou == null) {
+				alert("Вход отменен");
+			} else {
+				alert("Я вас не знаю");
+			}
+
+		})();
+
+	</script>
+</body>
+</html>
